@@ -19,7 +19,7 @@ To generate more maps (with synthetic annotations):
 ```
 $ python generate_worlds.py --mode [ local | global ] --save_path data/example_worlds/ --vis_path data/example_env/
 ```
-which will save pickle files that can be loaded with `data.load()` in `data/example_worlds/` and visualizations in `data/example_env/`. Visualizations of a few of the local maps already in `data/local/` are saved in `data/local_sprites/`.
+which will save pickle files that can be loaded with `data.load()` in `data/example_worlds/` and visualizations in `data/example_env/`. Visualizations of a few of the maps downloaded to `data/local/` are in `data/local_sprites/`.
 
 <p align="center">
 	<img src='logs/example/git_sprites.png' width='700'/>
