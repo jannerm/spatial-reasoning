@@ -43,7 +43,7 @@ To train the models in a supervised manner for the representation analysis, run 
 	<img src='logs/example/predictions.png' width='700'/>
 </p>
 <p align="center">
-<em> Predicted value maps for two maps with two instructions each. In the first map, the instructions share no objects but refer to the same location. In the second map, the instructions refer to different locations.
+<em> Predicted values for two maps with two instructions each. In the first map, the instructions share no objects but refer to the same location. In the second map, the instructions refer to different locations.
 </em>
 </p>
 
