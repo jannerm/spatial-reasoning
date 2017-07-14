@@ -1,5 +1,5 @@
 # Spatial Reasoning
-Code and data to reproduce the experiments in [Representation Learning for Grounded Spatial Reasoning](https://www.dropbox.com/s/4fea21cpcik9bp1/spatial_arxiv.pdf?dl=0).
+Code and data to reproduce the experiments in [Representation Learning for Grounded Spatial Reasoning](https://arxiv.org/abs/1707.03938).
 
 ## Installation
 Get [PyTorch](http://pytorch.org/) and `pip install -r requirements`
