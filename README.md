@@ -6,7 +6,7 @@ Get [PyTorch](http://pytorch.org/) and `pip install -r requirements`
 
 `./download_data.sh` to get the annotated map data and sprites to make new maps.
 
-<b>Note:</b> There were a few <a href="https://github.com/pytorch/pytorch/releases/tag/v0.2.0">breaking changes</a> in the latest PyTorch release that affected this repo. Make sure you are using v0.2.0+ (`torch.__version__` to check.)
+<b>Note:</b> There were a few <a href="https://github.com/pytorch/pytorch/releases/tag/v0.2.0">breaking changes</a> in the latest PyTorch release that affected this repo. Make sure you are using v0.2.0+ (`torch.__version__` to check)
 
 ## Data
 We have collected human annotations of 3308 goals in 10x10 maps, specified by referencing one or more of 12 object types placed randomly in the world. To load up to `max_train` train maps and `max_val` val maps with `mode = [ local | global ]` instructions and `annotations = [ human | synthetic ]` descriptions, run:
