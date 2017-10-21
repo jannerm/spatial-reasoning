@@ -138,7 +138,7 @@ class UVFA_text(nn.Module):
         # print lstm_out.size()
 
         values = state_out * object_out * lstm_out
-        map_pred = values.sum(1).view(self.batch_size, self.map_dim, self.map_dim)
+        map_pred = values.sum(1, keepdim=True).view(self.batch_size, self.map_dim, self.map_dim)
 
 
         return map_pred

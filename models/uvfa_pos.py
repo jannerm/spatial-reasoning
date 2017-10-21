@@ -143,7 +143,7 @@ class UVFA_pos(nn.Module):
         # print world_out.size(), pos_out.size()
 
         values = world_out * pos_out
-        map_pred = values.sum(1).view(self.batch_size, self.map_dim, self.map_dim)
+        map_pred = values.sum(1, keepdim=True).view(self.batch_size, self.map_dim, self.map_dim)
 
 
         return map_pred

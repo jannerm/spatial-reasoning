@@ -45,7 +45,7 @@ class MultiModel(nn.Module):
         obj_local = heatmap_batch * self.rbf_batch
         ## sum contributions from rbf from every source
         ## < batch x 1 x size x size >
-        obj_local = obj_local.sum(1)
+        obj_local = obj_local.sum(1, keepdim=True)
         # print 'obj_out:', obj_out.size()
         # pdb.set_trace()
         map_pred = torch.cat( (state_out, obj_local), 1 )

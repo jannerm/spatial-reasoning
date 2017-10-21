@@ -35,7 +35,7 @@ class MapModel(nn.Module):
         ## reshape to batch x channels x M x N x embed_dim
         x = x.view(*reshape)
         ## sum over channels in input
-        x = x.sum(1)
+        x = x.sum(1, keepdim=True)
         ## reshape to batch x embed_dim x M x N
         ## (treats embedding dims as channels)
         x = x.transpose(1,-1).squeeze()

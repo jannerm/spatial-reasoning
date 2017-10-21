@@ -47,7 +47,7 @@ class AttentionHeatmap(nn.Module):
         ## sum along attention_out_dim
         ## < batch x attention_out_dim x map_dim x map_dim >
         ## < batch x 1 x map_dim x map_dim >
-        local_heatmap = local_heatmap.sum(1)
+        local_heatmap = local_heatmap.sum(1, keepdim=True)
         # print conv.size()
         # conv = conv.view(-1, self.reshape_dim)
 

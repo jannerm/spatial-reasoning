@@ -18,7 +18,7 @@ class ValuesFactorized(nn.Module):
         goal_embedding = self.goal_model.forward( (objects, instructions) )
         
         values = state_embedding * goal_embedding
-        values = values.sum(1)
+        values = values.sum(1, keepdim=True)
         # ## num_states x rank
         # num_states = state_embedding.size(0)
         # ## num_goals x rank

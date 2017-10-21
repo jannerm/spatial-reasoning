@@ -30,7 +30,7 @@ class Phi(nn.Module):
         x = x.view(-1)
         x = self.embed(x)
         x = x.view(*self.reshape)
-        x = x.sum(1)
+        x = x.sum(1, keepdim=True)
         x = x.transpose(1,-1).squeeze()
         x = F.relu(self.conv1(x))
         x = F.relu(self.conv2(x))

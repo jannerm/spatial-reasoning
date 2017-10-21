@@ -68,7 +68,7 @@ class LookupLocationModel(nn.Module):
         ## reshape to batch x channels x M x N x embed_dim
         x = x.view(*reshape)
         ## sum over channels in input
-        x = x.sum(1)
+        x = x.sum(1, keepdim=True)
         # pdb.set_trace()
         ## reshape to batch x embed_dim x M x N
         ## (treats embedding dims as channels)

@@ -23,7 +23,7 @@ class CompositorModel(nn.Module):
         goal_rep = goal_embedding.repeat(num_states,1,1)
 
         values = state_rep * goal_rep
-        values = values.sum(2).squeeze()
+        values = values.sum(2, keepdim=True).squeeze()
         values = values.transpose(0,1)
 
         return values
