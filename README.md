@@ -49,4 +49,7 @@ To train the models in a supervised manner for the representation analysis, run 
 </em>
 </p>
 
+## Acknowledgments
+A huge thank-you to <a href="http://people.eecs.berkeley.edu/~dfried/">Daniel Fried</a> and <a href="https://web.mit.edu/jda/www/">Jacob Andreas</a> for providing a copy of the human annotations when the original Dropbox link was purged.
+
 
